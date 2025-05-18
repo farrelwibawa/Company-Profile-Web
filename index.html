@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SMKN 7 Semarang</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+<body class="bg-gray-100 font-sans scroll-smooth">
+
+  <header class="bg-black text-white sticky top-0 rounded-b-lg shadow-md z-50">
+    <div class="container mx-auto px-4 py-4">
+      <div class="flex justify-between items-center">
+        <div class="flex items-center">
+          <img src="images/logo.png" alt="Logo SMKN 7 Semarang" class="h-10 w-10 rounded-full mr-3" />
+          <span class="text-xl font-bold text-clifford">SMKN 7 SEMARANG</span>
+        </div>
+        <nav class="hidden md:flex space-x-6">
+          <a href="#about" class="px-3 py-2 border-b-2 border-transparent hover:border-clifford hover:text-clifford transition">About</a>
+          <a href="#jurusan" class="px-3 py-2 border-b-2 border-transparent hover:border-clifford hover:text-clifford transition">Jurusan</a>
+          <a href="#lookbook" class="px-3 py-2 border-b-2 border-transparent hover:border-clifford hover:text-clifford transition">Lookbook</a>
+          <a href="#testimoni" class="px-3 py-2 border-b-2 border-transparent hover:border-clifford hover:text-clifford transition">Testimoni</a>
+          <a href="#contact" class="px-3 py-2 border-b-2 border-transparent hover:border-clifford hover:text-clifford transition">Contact</a>
+        </nav>
+        <button class="md:hidden text-white focus:outline-none">
+          <i class="fas fa-bars text-xl"></i>
+        </button>
+      </div>
+      <nav class="md:hidden flex flex-col space-y-2 mt-4 pb-4">
+        <a href="#about" class="px-3 py-2 border-b-2 border-transparent hover:border-clifford hover:text-clifford transition">About</a>
+        <a href="#jurusan" class="px-3 py-2 border-b-2 border-transparent hover:border-clifford hover:text-clifford transition">Jurusan</a>
+        <a href="#lookbook" class="px-3 py-2 border-b-2 border-transparent hover:border-clifford hover:text-clifford transition">Lookbook</a>
+        <a href="#testimoni" class="px-3 py-2 border-b-2 border-transparent hover:border-clifford hover:text-clifford transition">Testimoni</a>
+        <a href="#contact" class="px-3 py-2 border-b-2 border-transparent hover:border-clifford hover:text-clifford transition">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="hero" class="relative bg-[url('images/hero-bg.jpg')] bg-cover bg-center text-white py-16 text-center rounded-b-lg before:absolute before:inset-0 before:bg-black/50 before:rounded-b-lg">
+    <div class="relative container mx-auto px-4 z-10">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">SMKN 7 SEMARANG</h1>
+      <p class="text-lg md:text-xl mb-6 text-gray-200">Mari belajar di SMKN 7 Semarang</p>
+      <a href="#contact" class="bg-clifford text-white px-6 py-3 rounded-lg hover:bg-red-700 transition">Get in Touch</a>
+    </div>
+  </section>
+
+  <section id="about" class="scroll-mt-20 py-12 bg-white rounded-lg mx-4 my-6 shadow-md">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-6 text-gray-800">About SMKN 7 Semarang</h2>
+      <p class="text-gray-700 text-center max-w-2xl mx-auto">
+        SMK Negeri 7 Semarang terletak di Simpang 5, menawarkan pendidikan berkualitas dengan fokus pada pengembangan keterampilan siswa untuk masa depan yang lebih baik.
+      </p>
+    </div>
+  </section>
+
+  <section id="jurusan" class="scroll-mt-20 py-12 bg-gray-100 rounded-lg mx-4 my-6 shadow-md">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-6 text-gray-800">Jurusan SIJA</h2>
+      <div class="flex justify-center">
+        <div class="bg-white p-6 rounded-lg max-w-sm text-center shadow-md">
+          <div class="text-clifford text-4xl mb-4 bg-gray-200 p-3 rounded-full">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-2 text-gray-800">SIJA</h3>
+          <p class="text-gray-600">
+            Jurusan SIJA mempelajari pengembangan perangkat lunak, jaringan komputer, dan aplikasi teknologi informasi untuk mempersiapkan siswa di dunia IT.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="lookbook" class="scroll-mt-20 py-12 bg-white rounded-lg mx-4 my-6 shadow-md">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-6 text-gray-800">Lookbook</h2>
+      <div class="flex justify-center">
+        <div class="bg-gray-100 p-4 rounded-lg max-w-sm text-center shadow-md">
+          <img src="images/sija-image.jpg" alt="Kegiatan Jurusan SIJA" class="w-full h-48 object-cover rounded mb-4">
+          <h3 class="text-lg font-bold text-gray-800">Uji Kompetensi Keahlian SIJA</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimoni" class="scroll-mt-20 py-12 bg-gray-100 rounded-lg mx-4 my-6 shadow-md">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-6 text-gray-800">Testimoni</h2>
+      <div class="flex justify-center">
+        <div class="bg-white p-6 rounded-lg max-w-sm text-center shadow-md">
+          <p class="text-gray-600 mb-4">"SMKN 7 Semarang sangat bagus, terutama jurusan SIJA! Fasilitas dan pengajarnya mendukung kami untuk berkembang."</p>
+          <div class="font-bold text-gray-800">Budi Santoso</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="contact" class="scroll-mt-20 py-12 bg-white rounded-lg mx-4 my-6 shadow-md">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-6 text-gray-800">Hubungi Kami</h2>
+      <form class="max-w-xl mx-auto">
+        <div class="mb-4">
+          <label for="name" class="block text-gray-700 font-bold mb-2">Nama:</label>
+          <input type="text" id="name" name="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-clifford" required>
+        </div>
+        <div class="mb-4">
+          <label for="email" class="block text-gray-700 font-bold mb-2">Email:</label>
+          <input type="email" id="email" name="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-clifford" required>
+        </div>
+        <div class="mb-4">
+          <label for="message" class="block text-gray-700 font-bold mb-2">Pesan:</label>
+          <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-clifford" required></textarea>
+        </div>
+        <button type="submit" class="bg-clifford text-white px-6 py-2 rounded hover:bg-red-700 transition">Kirim</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="bg-black text-white py-6 text-center mt-10 rounded-t-lg">
+    <p>&copy; 2025 SMKN 7 Semarang. All rights reserved.</p>
+  </footer>
+</body>
+</html>
